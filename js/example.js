@@ -1,5 +1,14 @@
 // ADD NEW ITEM TO END OF LIST
+// creating cream list element, to be appended to the <ul> element.
+var creamNode = document.createElement("li");
+var creamText = document.createTextNode("Cream");
+creamNode.appendChild(creamText);
 
+// ulElement is the parent (ul) node, grabbed this to make appending and
+// prepending easier.
+var ulElement = document.getElementById("one").parentNode;
+
+ulElement.appendChild(creamNode);
 
 // ADD NEW ITEM START OF LIST
 
