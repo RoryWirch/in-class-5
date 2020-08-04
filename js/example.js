@@ -20,6 +20,10 @@ kaleNode.appendChild(kaleText);
 ulElement.insertBefore(kaleNode, ulElement.childNodes[0]);
 
 // ADD A CLASS OF COOL TO ALL LIST ITEMS
+var nodeList = ulElement.childNodes;
 
+for (var i = 0; i < nodeList.length; i++){
+    nodeList[i].className = "cool";
+}
 
 // ADD NUMBER OF ITEMS IN THE LIST TO THE HEADING
