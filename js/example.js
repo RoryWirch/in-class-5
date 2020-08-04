@@ -11,7 +11,13 @@ var ulElement = document.getElementById("one").parentNode;
 ulElement.appendChild(creamNode);
 
 // ADD NEW ITEM START OF LIST
+// creating new list element, to be added to front of the <ul> element.
+var kaleNode = document.createElement("li");
+var kaleText = document.createTextNode("Kale");
+kaleNode.appendChild(kaleText);
 
+// insert kaleNode before rest of children in ulElement.
+ulElement.insertBefore(kaleNode, ulElement.childNodes[0]);
 
 // ADD A CLASS OF COOL TO ALL LIST ITEMS
 
